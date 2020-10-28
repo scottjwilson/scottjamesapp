@@ -10,7 +10,3 @@ This is a landing page that can be used to promote affiliate products.  This was
 It uses Google Analytics for tracking
 
 [Link to full project](https://scottwil.com)
-
-
-
-![great]( "good")
