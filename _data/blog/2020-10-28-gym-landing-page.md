@@ -7,6 +7,4 @@ thumbnail: /assets/gym.jpg
 ---
 Simple brochure style landing page for a fitness gym. Basic features, mailing list, and trainer information.
 
-
-
-[Link to full project](https://infinite-fitness.netlify.com)
+[Link to full project](https://infinitefitness.netlify.app/)
