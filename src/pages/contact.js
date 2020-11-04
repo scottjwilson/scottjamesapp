@@ -19,22 +19,28 @@ const ContactPage = ({ data: { site } }) => {
           <p>Let me help you kick start your next project &rarr;</p>
         </div>
         <div>
-          <form method="POST" className="form-container" data-netlify="true">
+          <form
+            method="POST"
+            className="form-container"
+            data-netlify="true"
+            name="contact"
+            netlify-honeypot="bot-field"
+          >
             <div>
-              <label>Name</label>
-              <input type="text" />
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" />
             </div>
             <div>
-              <label>Email</label>
-              <input type="email" />
+              <labell htmlFor="email">Email</labell>
+              <input type="email" name="email" />
             </div>
             <div>
-              <label>Subject</label>
-              <input type="text" />
+              <label htmlFor="subject">Subject</label>
+              <input type="text" name="subject" />
             </div>
             <div>
-              <label>Message</label>
-              <textarea></textarea>
+              <label htmlFor="message">Message</label>
+              <textarea name="message"></textarea>
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
               <input
@@ -49,6 +55,7 @@ const ContactPage = ({ data: { site } }) => {
     </Layout>
   );
 };
+
 export default ContactPage;
 export const pageQuery = graphql`
   query ContactPageQuery {
