@@ -25,7 +25,9 @@ const ContactPage = ({ data: { site } }) => {
             data-netlify="true"
             name="contact"
             netlify-honeypot="bot-field"
+            onSubmit="submit"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" />
@@ -49,17 +51,6 @@ const ContactPage = ({ data: { site } }) => {
                 style={{ marginRight: 0 }}
               />
             </div>
-          </form>
-          <form
-            name="contact-form"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input name="name" placeholder="Your Name" type="text" />
-            <input name="email" placeholder="name@name.com" type="email" />
-            <textarea name="message" />
-            <button>Send</button>
           </form>
         </div>
       </div>
